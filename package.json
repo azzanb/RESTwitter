@@ -1,0 +1,28 @@
+{
+  "name": "RESTwitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azzanb/RESTwitter.git"
+  },
+  "author": "Azzan Braxton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azzanb/twitterAPI/issues"
+  },
+  "homepage": "https://github.com/azzanb/RESTwitter#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.3",
+    "socket.io": "^2.0.3",
+    "time-ago": "^0.1.0",
+    "twit": "^2.2.9"
+  }
+}
