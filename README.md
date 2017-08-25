@@ -12,6 +12,8 @@
   }
   
   ```
-2)Make sure this config.js file is the in the same directory level as the app.js file. 
+2)Make sure this config.js file is the in the same directory level as the app.js file.
+
+
 3)Add this module to parse the created_at key of data object:
   ```const ta = require('time-ago')();```
