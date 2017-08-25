@@ -17,7 +17,8 @@ block tweets
 			strong.app--tweet--timestamp= tweetTime[i]     
 			a.app--tweet--author
 				.app--avatar(style='background-image: url('+ myImage +')')             
-				h4 Azzan Braxton @Extra_Zany
+				h4= myName 
+				myScreenName
 			p= tweets[i]    
 			ul.app--tweet--actions.circle--list--inline
 				

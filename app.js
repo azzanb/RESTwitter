@@ -29,6 +29,8 @@ const searchMessages = 'https://api.twitter.com/1.1/direct_messages.json?count=5
 3)Use loops in sample.pug so that html is processed dynamically
 */
 
+
+
 tweet.get('account/verify_credentials', { skip_status: true }, function(err, data, res){	
 })
 .then(function(result){
@@ -42,12 +44,12 @@ tweet.get('account/verify_credentials', { skip_status: true }, function(err, dat
 	      likesCount = [],
 	      tweetTimeAgo = [];
 
-	tweet.get('search/tweets', {q: myScreenName, count: 5}, function(err, data, res){
+	tweet.get('statuses/user_timeline', {screen_name: result.screen_name}, (err, data, res) => {
 		for(let i = 0; i < 5; i++){
-			statuses.push(data.statuses[i].text);
-			retweetCount.push(data.statuses[i].retweet_count);
-			likesCount.push(data.statuses[i].favorite_count);
-			tweetTimeAgo.push(ta.ago(data.statuses[i].created_at));
+			statuses.push(data[i].text);
+			retweetCount.push(data[i].retweet_count);
+			likesCount.push(data[i].favorite_count);
+			tweetTimeAgo.push(ta.ago(data[i].created_at));
 		}
 		return statuses, friends, myImage, myScreenName, myName, retweetCount, likesCount, tweetTimeAgo;
 	})
