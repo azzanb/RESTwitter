@@ -1,8 +1,8 @@
-# twitterAPI
-*Access Twitter's API to retrieve profile information to hold in a static CSS file.*
+# Twitter API
+### Access Twitter's API to retrieve profile information to hold in a static CSS file
 
 ### Render Personal Twitter Information:
-1) Create config.js file. Within, create an object literal to store your access key and token:
+1. Create config.js file. Within, create an object literal to store your access key and token:
   ```
   module.exports = {
     consumer_key:         '?????',
@@ -12,8 +12,6 @@
   }
   
   ```
-2)Make sure this config.js file is the in the same directory level as the app.js file.
+2. Make sure this config.js file is the in the same directory level as the app.js file.
+3. Open the terminal and run `npm i`, then `npm start`. Open browser to `localhost:3000`.
 
-
-3)Add this module to parse the created_at key of data object:
-  ```const ta = require('time-ago')();```
