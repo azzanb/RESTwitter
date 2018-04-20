@@ -15,3 +15,5 @@
 2. Make sure this config.js file is the in the same directory level as the app.js file.
 3. Open the terminal and run `npm i`, then `npm start`. Open browser to `localhost:3000`.
 
+### Technologies: Express, Node.JS, Twitter API
+
